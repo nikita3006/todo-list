@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <h1>TODO LIST</h1>
+    <form onsubmit="submitHandler(event)">
+        <label>Todo Name:</label>
+        <input type="text" id="todoName" />
+        <label>Description:</label>
+        <input type="text" id="description" />
+        <button type="submit">Add Item</button>
+    </form>
+
+    <h1>TODO REMAINING:</h1>
+    <ul id="TodoList"></ul>
+    <h1>TODO DONE:</h1>
+    <ul id="TodoDone"></ul>
+
+    <script src="./index.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+</body>
+</html>
